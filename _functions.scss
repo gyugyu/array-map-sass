@@ -2,12 +2,12 @@
 @use 'sass:meta';
 
 @function map($array, $function) {
-  $ret: [];
-  $is-bracketed: list.is-bracketed($array);
+  $ret: ();
+  $sep: list.separator($array);
 
   @each $item in $array {
     $result: meta.call($function, $item);
-    $ret: list.join($ret, $result, $bracketed: $is-bracketed);
+    $ret: list.append($ret, $result, $separator: $sep);
   }
 
   @return $ret;

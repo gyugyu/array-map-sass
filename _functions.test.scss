@@ -1,0 +1,15 @@
+@use 'sass:meta';
+@use '@gyugyu/assert-sass' as assert;
+@use 'functions';
+
+@function foo($str) {
+  @return $str + '-foo';
+}
+
+@function test-ok() {
+  $foo: meta.get-function('foo');
+  $array: 'a', 'b', 'c';
+  $result: functions.map($array, $foo);
+  $expected: 'a-foo', 'b-foo', 'c-foo';
+  @return assert.equals($result, $expected);
+}
