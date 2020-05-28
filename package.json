@@ -1,0 +1,25 @@
+{
+  "name": "@gyugyu/array-map-sass",
+  "version": "0.1.0",
+  "description": "Array#map implementation for Dart Sass",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gyugyu/array-map-sass.git"
+  },
+  "keywords": [],
+  "author": "Yusuke Yagyu <gyugyu@pepabo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gyugyu/array-map-sass/issues"
+  },
+  "homepage": "https://github.com/gyugyu/array-map-sass#readme",
+  "devDependencies": {
+    "sass": "^1.26.5"
+  },
+  "peerDependencies": {
+    "sass": "^1.26.5"
+  }
+}

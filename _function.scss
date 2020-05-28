@@ -1,0 +1,14 @@
+@use 'sass:list';
+@use 'sass:meta';
+
+@function map($array, $function) {
+  $ret: [];
+  $is-bracketed: list.is-bracketed($array);
+
+  @each $item in $array {
+    $result: meta.call($function, $item);
+    $ret: list.join($ret, $result, $bracketed: $is-bracketed);
+  }
+
+  @return $ret;
+}
