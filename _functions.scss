@@ -2,7 +2,7 @@
 @use 'sass:meta';
 
 @function map($array, $function) {
-  $ret: ();
+  $ret: if(list.is-bracketed($array), [], ());
   $sep: list.separator($array);
 
   @each $item in $array {

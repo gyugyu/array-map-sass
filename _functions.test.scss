@@ -13,3 +13,11 @@
   $expected: 'a-foo', 'b-foo', 'c-foo';
   @return assert.equals($result, $expected);
 }
+
+@function test-supports-bracketed-list() {
+  $foo: meta.get-function('foo');
+  $array: [a b c];
+  $result: functions.map($array, $foo);
+  $expected: [a-foo b-foo c-foo];
+  @return assert.equals($result, $expected);
+}
