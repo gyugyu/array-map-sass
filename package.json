@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Array#map implementation for Dart Sass",
   "scripts": {
-    "test": "sassunit -I node_modules"
+    "test": "sassunit"
   },
   "repository": {
     "type": "git",
