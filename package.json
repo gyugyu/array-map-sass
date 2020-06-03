@@ -9,7 +9,13 @@
     "type": "git",
     "url": "git+ssh://git@github.com/gyugyu/array-map-sass.git"
   },
-  "keywords": [],
+  "keywords": [
+    "sass",
+    "scss",
+    "array",
+    "Array.prototype.map",
+    "map"
+  ],
   "author": "Yusuke Yagyu <gyugyu@pepabo.com>",
   "license": "MIT",
   "bugs": {
@@ -17,6 +23,8 @@
   },
   "homepage": "https://github.com/gyugyu/array-map-sass#readme",
   "devDependencies": {
+    "@gyugyu/assert-sass": "^0.1.1",
+    "@gyugyu/sassunit": "^0.1.0",
     "sass": "^1.26.5"
   },
   "peerDependencies": {

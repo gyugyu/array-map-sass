@@ -1,8 +1,13 @@
 # array-map-sass
 Array#map implementation for Dart Sass
 
+## Installation
 
-## idea
+```
+$ npm install @gyugyu/array-map-sass
+```
+
+## Example
 
 ```scss
 @use '@gyugyu/array-map-sass' as array-map;
